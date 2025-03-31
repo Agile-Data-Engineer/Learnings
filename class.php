@@ -24,9 +24,6 @@ $user1->login();
 var_dump($user1);
 
 
-
-
-
 class User2
 {
     public $name2;
@@ -37,12 +34,12 @@ class User2
         $this->name2  = $name2;
         $this->email2 = $email2;
 
-        echo "Constructor ran for $name2" . '</br>';
+        echo '</br>' . "Constructor ran for $name2" . '</br>';
     }
 
     public function login()
     {
-        echo ' You are logged in';
+        echo $this->name2 . ' are logged in using this email ' . $this->email2 . '</br>';
     }
 }
 
